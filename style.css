@@ -99,6 +99,10 @@ main {
   font-size: 3.5rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* ABSOLUTE POSITIONED ELEMENTS */
 .btn {
   position: absolute;
