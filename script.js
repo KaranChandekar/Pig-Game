@@ -14,7 +14,11 @@ score1El.textContent = 0;
 diceEl.classList.add("hidden");
 
 // Rolling dice functionality
-btnRoll.addEventListener('click', function () {
-    // 1. Generating a random dice roll
-    const dice = Math.floor(Math.random() * 6) + 1;
-})
+btnRoll.addEventListener("click", function () {
+  // 1. Generating a random dice roll
+  const dice = Math.floor(Math.random() * 6) + 1;
+
+  // 2. Display dice
+  diceEl.classList.remove("hidden");
+  diceEl.src = `dice-images/dice-${dice}.png`;
+});
